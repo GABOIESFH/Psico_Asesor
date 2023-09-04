@@ -1,0 +1,23 @@
+body{
+    background: rgb(3,23,161);
+background: radial-gradient(circle, rgba(3,23,161,1) 0%, rgba(9,3,45,1) 55%);
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
