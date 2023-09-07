@@ -13,93 +13,60 @@
 <body>
 
 <!-- ****************************************barra de navegacion*********************************************** -->
-  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-      <!-- ***********Logo**************** -->
-      <a href="./index.html" class="flex items-center">
-          <img src="./Images/Psico_logo.png" class="h-8 mr-3" alt="PsicoAsesor_Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PsicoAsesor</span>
-      </a>
-      <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <!-- Boton Home -->
-          <li>
-            <a href="/index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
-          </li>
-        <!-- Dropdown Nuestros Servicios -->
-          <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Nuestros Servicios <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-    </svg></button>
-              <!-- Dropdown menu  Z-50 trae el elemento hacia enfrente en Z-->
-              <div id="dropdownNavbar" class="z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                    </li>
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-    </svg></button>
-                      <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                            <li>
-                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Overview</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My downloads</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Billing</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Rewards</a>
-                            </li>
-                          </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                    </li>
-                  </ul>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                  </div>
-              </div>
-          </li>
-          <!-- ********************************* Pagina del equipo***************************************** -->
-          <li>
-            <a href="./Equipo.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nuestro Equipo</a>
-          </li>
-          <!-- ************************************* Pagina nuestra Historia*************************************** -->
-          <li>
-            <a href="./Historia.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nuestra Historia</a>
-          </li>
-          <!-- *****************************************Pagina Contactenos************************************************** -->
-          <li>
-            <a href="#contacto" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contactenos</a>
-          </li>
-        </ul>
-      </div>
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+    <!-- ***********Logo**************** -->
+    <a href="./index.html" class="flex items-center">
+        <img src="./Images/Psico_logo.png" class="h-8 mr-3" alt="PsicoAsesor_Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PsicoAsesor</span>
+    </a>
+    <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <!-- Boton Home -->
+        <li>
+          <a href="/index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+        </li>
+      <!-- Dropdown Nuestros Servicios -->
+        <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Nuestros Servicios <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg></button>
+            <!-- Dropdown menu  Z-50 trae el elemento hacia enfrente en Z-->
+            <div id="dropdownNavbar" class="z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#Atencion" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Atención Psicológica</a>
+                  </li>
+                  <li>
+                    <a href="#Entrenamientos" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Entrenamientos Vivenciales</a>
+                  </li>
+                  <li>
+                    <a href="#Orientación" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Orientación Vocacional</a>
+                  </li>
+                </ul>
+            </div>
+        </li>
+        <!-- ********************************* Pagina del equipo***************************************** -->
+      
+        <!-- ************************************* Pagina nuestra Historia*************************************** -->
+        <li>
+          <a href="./Historia.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nuestra Historia</a>
+        </li>
+        <!-- *****************************************Pagina Contactenos************************************************** -->
+        <li>
+          <a href="./index.html#contacto" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contactenos</a>
+        </li>
+      </ul>
     </div>
-  </nav>  
- 
+  </div>
+</nav>  
   
-<!-- ***************************************** Cuerpo********************************************** -->
-  <!-- <h1 class="text-3xl font-bold underline"> -->
-        <!-- Hello world! -->
-      <!-- </h1> -->
-    
-   
-
-
-
 <!-- ************************************Carrusel*********************************************** -->
 
 
@@ -156,18 +123,53 @@
 
 <h2 class="p-8 text-2xl italic font-extrabold">Quienes somos</h2>
 <p>PsicoAsesor se basa en la experiencia de más 10 años del Intituto de Desarrollo Humano Ser Libre, un espacio de trabajo interdisciplinario, conformado por entrenadores especiales de diferentes zonas de la Republica Mexicana, elegidos de manera rigurosa para brindar el mejor servicio a nuestros alumnos.  PsicoAsesor esta comprometido con la sociedad, por lo que de manera constante realiza una serie metas sociales con el fin de reestructurar los tejidos sociales y las familias.</p>
-<p>PsicoAsesor es un referente regional en formación sobre desarrollo humano y el enfoque de capacidades.  Como parte de este esfuerzo, el PsicoAsesor ha promovido la asistencia a grupos vulnerables y personas en situacion de reclusion.</p>
+<p class="mt-2">PsicoAsesor es un referente regional en formación sobre desarrollo humano y el enfoque de capacidades.  Como parte de este esfuerzo, el PsicoAsesor ha promovido la asistencia a grupos vulnerables y personas en situacion de reclusion.</p>
 <!-- *************************************************Mapa********************************************** -->
+<h2 class="mt-8 text-2xl italic font-extrabold" id="Atencion">Atencion Psicologica</h2>
+    <p class="font-bold italic text-justify"> Es una terapia enfocada a tratar trastornos psicológicos, conductas problemáticas y/o pensamientos y emociones disruptivas que afectan en el bienestar de las personas, por lo tanto, En PsicoAsesor nos comprometemos con su bienestar para ayudarlo a alcanzar su maximo potencial.</p>
+
+
+<h2 class="mt-12 text-2xl italic font-extrabold" id="Entrenamientos">Entrenamientos</h2>
+<dl class="mt-2 text-lg not-italic font-semibold text-white">
+  <dt class="font-bold italic">El poder de la palabra</dt>
+  <dd class="text-justify"> <p>Es el inicio para tu proceso de transformación personal. El nivel 1 esta diseñado para que puedas empezar a trabajar con diferentes herramientas que te ayudarán a potenciar tu calidad de vida personal y emocional.</p>
+
+   <p>Se llama El poder de la palabra porque es a través de ésta que empezamos a ser más responsables, responsabilizándonos por lo que decimos y lo que hacemos, siempre desde una perspectiva humana, ecológica (bien para mi – bien para los demás), y de autodescubrimiento.</p>
+    <!-- <img class="relative left-" src="./Images/Nivel11.webp" alt="Nivel1" > -->
+    
+  </dd>
+   
+  <dt class="font-bold italic mt-5">El poder del amor</dt>
+   <dd class="text-justify">
+    <p>Es un entrenamiento desafiante y poderoso, las personas que viven este entrenamiento lo llegan a convertir en uno de los eventos con mayor importancia e impacto en sus vidas, orientándolo a una experiencia de sanación, conectando los sentimientos, generando grandes resultados de liberación, perdón, compromiso propio y sobre todo amor.</p> 
+    </dd>
+
+</dl>
+
+<h2 class="mt-8 text-2xl italic font-extrabold" id="Orientación">Orientación Vocacional</h2>
+    <p class="font-bold italic text-justify"> La orientación vocacional es un proceso psicológico y pedagógico que trata de ayudar a la elección de una profesión en concreto, acorde a las motivaciones, aptitudes y actitudes del estudiante por lo cual lo guiaremos a tomar la mejor decision en su futuro profesional</p>
+
 <div class="my-8 text-2xl italic font-extrabold ">
 <h2>Nuestra Ubicacion</h2>
 
-<div class="flex justify-center ">
+    <div class="flex justify-center  ">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1229.1654237940943!2d-106.06692977094428!3d28.635841577239855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea435455de5e15%3A0x2ff5ea5977ebce60!2sC.%20Mariano%20Jim%C3%A9nez%201304%2C%20Obrera%2C%2031350%20Chihuahua%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1693525556708!5m2!1ses-419!2smx" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+<h2 class="mt-5 text-center">Horario De Atencion</h2>
+<ul class="mt-2 text-lg not-italic font-semibold text-white text-center">
+  <li>Lun:	8:00–20:00</li>
+  <li>Mar:	8:00–20:00</li>
+  <li>Mie:	8:00–20:00</li>
+  <li>Jue:	8:00–20:00</li>
+  <li>Vie:	8:00–20:00</li>
+  <li>Sab:	10:00–14:00</li>
+  <li>Dom:	Previa Cita</li>
+</ul>
   </div>
+  
 <!-- **********************************************Contacto***************************** -->
     <div class="p-8 text-2xl italic font-extrabold bg-gray-950">
-    <h4 id="contacto">Contacto</h4>
+    <h4 id="contacto">Contactenos</h4>
 
 <form>
   <div class="grid gap-6 mb-6 md:grid-cols-2">
